@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <title>Gemini Text</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Gerar resumos</h1>
+        <div class="barra_horizontal"></div>
+
+        <form method="post" action="resumo">
+            <div class="inputs">
+                <label for="idioma">Digite aqui o idioma que você deseja que o resumo seja escrito: </label>
+                <input type="text" name="idioma" id="idioma" required>
+            </div>
+
+            <div class="inputs">
+                <label for="formalidade">Grau de formalidade:</label>
+                <select id="formalidade" name="formalidade" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Alta</option>
+                    <option>Média</option>
+                    <option>Baixa</option>
+                </select>
+            </div>
+
+            <div class="inputs">
+                <label for="texto">Envie aqui o texto: </label>
+                <input type="text" name="text" id="texto" required>
+            </div>
+
+            <button type="submit">Gerar</button>
+            
+
+        </form>
+
+    </div>
+
+    <br>
+    <div class="resumo">
+        {% if resumo %}
+        {{ resumo | safe }}
+        {% endif %}
+    </div>
+</body>
+</html>
