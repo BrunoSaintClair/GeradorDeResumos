@@ -22,76 +22,56 @@ def geraResposta(idioma, formalidade, texto):
     }
 
     exemplo_resumo = """
-Texto base: 
+Texto 1: 
+Essa é a pior colheita de laranja no Brasil desde 1988
+As plantações de laranjeiras do agro brasileiro devem ter sua pior colheita em nada menos que 36 anos, com uma queda de 24% na produção em relação a 2023.
 
-O que é Bitcoin?
-O Bitcoin é uma forma de dinheiro eletrônico peer-to peer (ponto a ponto) que pode ser transferida sem o intermédio de instituições financeiras.
+Há dois principais motivos para isso:
+Mudanças climáticas. Aliás, esse é o segundo ano consecutivo que elas afetam a safra de laranjas.
+Greening. Antes que você pergunte, essa é uma doença que se espalha nos pomares. Ao que parece, ela foi mais hard nesta safra.
 
-Na prática, isso significa que dois indivíduos, mesmo morando em países diferentes, podem enviar BTC um para o outro sem precisar de um banco ou de uma empresa de remessa internacional.
+A relevância disso é simples. Pense que somos responsáveis por 75% do comércio mundial de suco de laranja, sendo o maior exportador do produto. A cada 4 copos de orange juice pelo mundo, 3 são brasileiros.
+Para se ter uma ideia, historicamente, nos últimos anos, só de exportação, o mercado de laranja gerou R$ 2 bilhões ao PIB brasileiro.
+Sofre em uma ponta, impacta na outra. Assim como a economia, nós — consumidores — também devemos ser impactados, uma vez que a safra menor tende a aumentar o preço do produto. Lei da oferta e demanda.
+Isso porque, atualmente, o preço da caixa de 40kg já chegou perto de R$ 90, o maior valor em 30 anos. A tendência é subir ainda mais…
 
-As transações são confirmadas na blockchain, um banco de dados enorme que registra todas as negociações dos usuários. Essa tecnologia nasceu junto com o Bitcoin, e funciona de tal forma que os próprios participantes são os auditores da rede.
 
-Como não há uma terceira parte envolvida, mandar Bitcoin de um país para outro costuma ser mais barato e rápido do que transferir moedas fiduciárias.
 
-O BTC é digital, descentralizado e não é controlado por governos, empresas ou pessoas. Portanto, nenhuma Casa da Moeda precisa imprimi-lo e nenhum Banco Central tem o poder de controlar o seu preço. Seu valor depende principalmente da lei de oferta e da procura.
+Resposta 1:
 
-Quando surgiu o Bitcoin
-O Bitcoin surgiu em 31 de outubro de 2008. Naquele dia, o criador (ou criadores) da criptomoeda, que se esconde sob o pseudônimo de Satoshi Nakamoto, enviou um e-mail para uma lista de pessoas interessadas em criptografia. No corpo da mensagem, ele escreveu que vinha trabalhando “em um novo sistema de dinheiro eletrônico totalmente peer-to-peer, sem terceiros confiáveis”.
+Tema: Colheita de laranjas no Brasil.
 
-Ele também inseriu um link com o white paper (manual) da criptomoeda, em inglês. No documento, com nove páginas, Nakamoto descreveu resumidamente os fundamentos do Bitcoin, baseados em quatro pontos principais:
+Tópicos: Previsão de pior colheita de laranjas desde 1988. Greening e mudanças climáticas são os principais causadores da queda na produção de laranjas. Impacto da colheita de laranjas na economia do Brasil.
 
-É uma rede peer-to-peer para evitar o gasto duplo (possibilidade de enviar as mesmas moedas mais de uma vez); sem intermediários, como bancos; permite o anonimato dos participantes; e usa Prova de Trabalho (um tipo de algoritmo) para gerar Bitcoin (processo que ganhou o nome de mineração) e prevenir o tal gasto duplo.
-
-Crise financeira nos EUA e o Bitcoin
-O white paper do Bitcoin foi lançado pouco mais de um mês após o anúncio da falência do Lehman Brothers, que foi o quarto maior banco de investimentos dos Estados Unidos. A quebra do conglomerado financeiro foi o episódio mais emblemático da crise financeira nos EUA, responsável por uma das piores recessões econômicas da história.
-
-A quase simultaneidade desses dois fatos fez alguns economistas e entusiastas do mercado de criptomoedas se questionarem se o Bitcoin teria surgido como uma resposta à instabilidade financeira daquela época. Fernando Ulrich, mestre em economia e especialista em criptomoedas, falou sobre os dois eventos em seu livro “Bitcoin – A Moeda na Era digital”.
-
-“Ainda que possa ser considerada uma mera coincidência o fato de a moeda digital ter surgido em meio à maior crise financeira desde a Grande Depressão de 1930, não podemos deixar de notar o avanço do estado interventor, as medidas sem precedentes e arbitrárias das autoridades monetárias na primeira década do novo milênio e a constante perda de privacidade que cidadãos comuns vêm enfrentando em grande parte dos países desenvolvidos e emergentes”.
-
-Vale lembrar que a crise financeira nos Estados foi gerada, em parte, por uma desenfreada liberação de crédito fácil e pela especulação no mercado imobiliário.
-
-Quem criou o Bitcoin?
-O criador do Bitcoin se esconde atrás do pseudônimo Satoshi Nakamoto. Quem ele é, no entanto, ainda continua um mistério. Algumas pessoas vieram a público afirmando ser o personagem, mas ninguém conseguiu de fato provar nada.
-
-O que se sabe até agora vem de vestígios de sua vida online. Em novembro de 2009, por exemplo, ele lançou o BitcoinTalk – um fórum de discussões sobre a criptomoeda. Nakamoto foi bem ativo no espaço e, ao longo de quase um ano, postou cerca de 600 mensagens. Nenhuma, no entanto, dá pistas concretas sobre sua verdadeira identidade.
-
-Candidatos a Satoshi Nakamoto
-Ninguém sabe ainda quem criou o Bitcoin. No entanto, existem alguns suspeitos. Na lista, figuram pessoas que colaboraram com o projeto, eram próximas do criador do BTC – pelo menos na vida online – ou foram citados por ele. Há também ricaços capazes de influenciar o mercado com apenas um tweet. Veja alguns dos candidatos:
-
-Gavin Andresen, por ter ficado com o controle do código da criptomoeda e ter trocado mensagens com Nakamoto, é um deles. 
-Outro suposto criador do BTC é Hal Finney, que foi a primeira pessoa a receber uma transferência de Bitcoin de Nakamoto – isso lá em 11 de janeiro de 2009. Finney, no entanto, morreu em agosto de 2014 aos 58 anos, vítima de uma doença degenerativa. A pedido dele próprio, seu corpo foi congelado para ser revivido no futuro – isso se surgir alguma tecnologia capaz de vencer a morte.
-Os cientistas da computação Nick Szabo e Adam Back, ambos citados no white paper do Bitcoin, também aparecem na lista. Craig Steven Wright, cientista da computação e empresário que em 2016 disse a jornalistas que era o verdadeiro Nakamoto (sem apresentar provas convincentes), é outro suspeito.
-Por fim, o CEO da Tesla e da SpaceX, Elon Musk, também está no páreo. A teoria a respeito de Musk surgiu depois que um funcionário do bilionário, conhecido por influenciar o mercado de criptomoedas com seus tweets, disse que ele poderia ter criado o BTC. O empresário nega.  
-
-Diferença entre Bitcoin e moedas digitais
-A principal diferença entre Bitcoin, demais criptomoedas e Moedas Digitais de Banco Central (CBDC, na sigla em inglês) é a forma de emissão e distribuição.
-
-O BTC e as altcoins (termo usado para identificar qualquer criptomoeda diferente do Bitcoin) são descentralizadas. Ou seja, não há governo ou país no controle. As regras, portanto, são ditadas pelos envolvidos nos projetos, bem como pelos usuários.
-
-As moedas digitais de bancos centrais, por outro lado, são emitidas e distribuídas por órgãos governamentais. “As CBDC são representações digitais das moedas fiduciárias dos países sendo controladas pelos bancos centrais”, explicou Ricardo Dantas, CO-CEO da corretora de criptomoedas Foxbit.
+Resumo: Essa é a pior colheita de laranja no Brasil em muitos anos, com uma queda de 24% na produção em relação a 2023. Os principais motivos pra isso: Mudanças climáticas e Greening(uma doença que se espalha nos pomares). Somos responsáveis por 75% do comércio mundial de suco de laranja, sendo o maior exportador do produto. A cada 4 copos de orange juice pelo mundo, 3 são brasileiros. Historicamente, nos últimos anos, só de exportação, o mercado de laranja gerou R$ 2 bilhões ao PIB brasileiro. Tanto a economia quanto os consumidores devem ser impactados, uma vez que a safra menor tende a aumentar o preço do produto. Lei da oferta e demanda.
 
 
 
 
-+ Este é um exemplo de resumo:
+Texto 2:
+Um dos melhores jogadores formados pelo Vasco nos últimos 30 anos, Philippe Coutinho deve procurar novo clube no meio do ano, quando acaba seu empréstimo ao Al-Duhail, do Catar. O Aston Villa, dono dos direitos do atleta, está disposto a abrir mão dele, o que empolga os torcedores vascaínos. Mas, afinal, o que há de concreto na possível volta do craque a São Januário? 
+Nas últimas horas, os vascaínos levantaram a campanha "Volta, Coutinho" no X, antigo Twitter, e o assunto está entre os mais comentados do país. A informação do interesse do Vasco foi publicada primeiramente pelo perfil "Mídia Vascaína".
+Coutinho, de 31 anos, tem contrato com o Aston Villa até 2026. No entanto, o clube inglês faz ótima campanha na Premier League - ocupa o 4º lugar, perto de garantir uma vaga na Champions - e inicialmente não tem interesse na volta do meia para a próxima temporada.
 
-Tema: Bitcoin
+É aí que o Vasco entra na história. O clube sondou Coutinho algumas vezes nos últimos anos, mas até então o jogador não tinha interesse em voltar ao Brasil. Agora, o meia vê com bons olhos o retorno ao país e dá preferência ao clube que o revelou.
 
-Tópicos principais: O que é BitCoin, quando surgiu o BitCoin, quem criou o bitcoin, candidados a Satoshi Nakamoto, Diferença entre Bitcoin e moedas digitais.
+A SAF vascaína fez contato informal com o estafe do jogador para entender o cenário e estuda uma investida para ter Coutinho por empréstimo. É provável que o Aston Villa peça uma compensação financeira. Por outro lado, o meia de 31 anos está disposto a reduzir seu salário para fechar com o Vasco. Hoje, o maior salário pago pelo clube é o de Payet, que recebe cerca de R$ 1,5 milhão por mês.
 
-Resumo: O Bitcoin é uma forma de dinheiro eletrônico peer-to peer (ponto a ponto) que pode ser transferida sem o intermédio de instituições financeiras. 
-O Bitcoin surgiu em 31 de outubro de 2008. Naquele dia, o criador (ou criadores) da criptomoeda, que se esconde sob o pseudônimo de Satoshi Nakamoto, enviou um e-mail para uma lista de pessoas interessadas em criptografia. No corpo da mensagem, ele escreveu que vinha trabalhando “em um novo sistema de dinheiro eletrônico totalmente peer-to-peer, sem terceiros confiáveis”. 
-O criador do Bitcoin se esconde atrás do pseudônimo Satoshi Nakamoto. Quem ele é, no entanto, ainda continua um mistério. Algumas pessoas vieram a público afirmando ser o personagem, mas ninguém conseguiu de fato provar nada. Ninguém sabe ainda quem criou o Bitcoin. No entanto, existem alguns suspeitos. Na lista, figuram pessoas que colaboraram com o projeto, eram próximas do criador do BTC pelo menos na vida online ou foram citados por ele. Há também ricaços capazes de influenciar o mercado com apenas um tweet. A principal diferença entre Bitcoin, demais criptomoedas e Moedas Digitais de Banco Central (CBDC, na sigla em inglês) é a forma de emissão e distribuição.
+Para avançar na contratação, o Vasco precisa ter o aval da 777 Partners, que não tem intenção de investir alto na segunda janela - até porque a SAF gastou R$ 130 milhões em reforços no início do ano. Por isso, a preferência é por uma negociação por empréstimo, sem o custo de compra de direitos. O clube também estuda possíveis saídas no meio do ano, que poderiam aliviar a folha salarial e abrir espaço para Coutinho.
 
 
+Resposta 2:
+
+Tema: Possível chegada do Philippe Coutinho ao Vasco da Gama.
+
+Tópicos: Philippe Coutinho deve procurar novo clube no meio do ano. O meia vê com bons olhos o retorno ao país e dá preferência ao clube que o revelou. A SAF vascaína fez contato com o estafe do jogador para entender o cenário e estuda uma investida. A preferência é por uma negociação por empréstimo, sem o custo de compra de direitos.
+
+Resumo: Philippe Coutinho deve procurar novo clube no meio do ano, quando acaba seu empréstimo ao Al-Duhail, do Catar. Coutinho pertence ao Aston Villa, mas o clube inglês inicialmente não tem interesse na volta do meia para a próxima temporada. O meia vê com bons olhos o retorno ao país e dá preferência ao clube que o revelou. A SAF vascaína já fez contato informal com o estafe do jogador para entender o cenário e estuda uma investida para ter Coutinho por empréstimo. É provável que o Aston Villa peça uma compensação financeira. O meia de 31 anos está disposto a reduzir seu salário para fechar com o Vasco. Para avançar na contratação, o Vasco precisa ter o aval da 777 Partners.
 """
+
 
     modelo = genai.GenerativeModel(model_name='gemini-1.5-pro-latest', generation_config=generation_config)
 
-    resp = modelo.generate_content(exemplo_resumo + ", a partir desse exemplo, gere um longo resumo no idioma " + idioma + 
-                                   ". Gere esse resumo com uma formalidade do nível:" + formalidade +
-                                     ", do texto a seguir: \n" + texto + 
-                                     "\n Além do resumo, informe o tema principal do texto, e o separe em tópicos.")
-
+    resp = modelo.generate_content("Seguindo o modelo a seguir:\n" + exemplo_resumo + 
+                                   "\n\n Informe o tema principal, os tópicos, e faça um resumo no idioma: " + idioma + ", com uma formalidade " + formalidade + "do texto a seguir: \n" + texto)
     return resp.text
