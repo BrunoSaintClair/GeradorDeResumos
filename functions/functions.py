@@ -60,6 +60,7 @@ A SAF vascaína fez contato informal com o estafe do jogador para entender o cen
 Para avançar na contratação, o Vasco precisa ter o aval da 777 Partners, que não tem intenção de investir alto na segunda janela - até porque a SAF gastou R$ 130 milhões em reforços no início do ano. Por isso, a preferência é por uma negociação por empréstimo, sem o custo de compra de direitos. O clube também estuda possíveis saídas no meio do ano, que poderiam aliviar a folha salarial e abrir espaço para Coutinho.
 
 
+
 Resposta 2:
 
 Tema: Possível chegada do Philippe Coutinho ao Vasco da Gama.
@@ -67,11 +68,44 @@ Tema: Possível chegada do Philippe Coutinho ao Vasco da Gama.
 Tópicos: Philippe Coutinho deve procurar novo clube no meio do ano. O meia vê com bons olhos o retorno ao país e dá preferência ao clube que o revelou. A SAF vascaína fez contato com o estafe do jogador para entender o cenário e estuda uma investida. A preferência é por uma negociação por empréstimo, sem o custo de compra de direitos.
 
 Resumo: Philippe Coutinho deve procurar novo clube no meio do ano, quando acaba seu empréstimo ao Al-Duhail, do Catar. Coutinho pertence ao Aston Villa, mas o clube inglês inicialmente não tem interesse na volta do meia para a próxima temporada. O meia vê com bons olhos o retorno ao país e dá preferência ao clube que o revelou. A SAF vascaína já fez contato informal com o estafe do jogador para entender o cenário e estuda uma investida para ter Coutinho por empréstimo. É provável que o Aston Villa peça uma compensação financeira. O meia de 31 anos está disposto a reduzir seu salário para fechar com o Vasco. Para avançar na contratação, o Vasco precisa ter o aval da 777 Partners.
+
+
+
+
+Texto 3:
+Banco Central divulgou a ata da sua última reunião que decidiu a nova taxa de juros do país, mostrando a opinião e os votos de cada um dos 9 diretores.
+
+Se você já se esqueceu… O BC segurou o ritmo dos cortes na Selic e diminuiu a taxa em 0,25%, deixando ela em 10,50% ao ano — interrompendo o ciclo de seis cortes seguidos de 0,5%.
+
+Aí rachou. Os diretores do BC se dividiram entre aqueles que queriam seguir com as reduções de meio ponto e os que preferiam pisar no freio. Com a ata divulgada, isso ficou bem claro:
+
+Os quatro indicados no atual governo por Lula votaram por reduzir a Selic em 0,5%;
+
+Já os cinco nomeados por Bolsonaro votaram por corte de 0,25%.
+
+O que todos concordaram foi não dar pistas sobre a próxima decisão dos juros, deixando claro que o momento é de cautela com o cenário internacional e o aumento das projeções de inflação.
+
+O que está por trás disso: Desde que assumiu, Lula tem criticado a política de juros, argumentando que a taxa está alta demais e “atrasa o crescimento econômico do país”.
+
+O principal alvo é o presidente do BC, Campos Neto, que foi indicado por Bolsonaro. O mandato dele vai até o fim do ano, e, depois disso, Lula vai indicar um substituto. Ou seja, os indicados do atual governo vão ser maioria.
+
+Enquanto a previsão da inflação para este ano aumenta, as decisões dos diretores vão impactar o bolso dos brasileiros, já que a Selic dita o preço do crédito e dos empréstimos.
+
+
+
+Resposta 3:
+
+Tema: Divergências na decisão da taxa básica de juros (Selic).
+
+Tópicos: Divulgação da ata da última reunião do Comitê de Política Monetária (Copom) do Banco Central (BC). Manutenção da taxa Selic em 10,50% ao ano, com redução de 0,25%. Divisão entre os diretores do BC quanto à intensidade do corte da Selic. Posição favorável à redução de 0,5% por parte dos diretores indicados pelo presidente Lula. Voto pela redução de 0,25% pelos diretores indicados pelo ex-presidente Bolsonaro. Cautela em relação ao cenário internacional e às projeções de inflação. Críticas do presidente Lula à política de juros adotada pelo BC.
+
+Resumo: A ata da última reunião do Copom, divulgada pelo Banco Central, revelou divergências entre seus membros acerca da definição da taxa básica de juros. Enquanto os diretores indicados pelo presidente Lula defenderam uma redução mais expressiva, de 0,5%, os indicados pelo ex-presidente Bolsonaro votaram por uma diminuição de 0,25%, o que prevaleceu, interrompendo o ciclo de seis cortes consecutivos de 0,5%. A decisão final, contudo, reflete a preocupação de todos os membros do Copom com a conjuntura internacional e o aumento das projeções de inflação. A ata também evidencia a tensão entre o governo Lula e o presidente do BC, Roberto Campos Neto, em relação à condução da política monetária do país. As decisões tomadas pelo BC, em um contexto de inflação crescente, impactam diretamente a vida dos brasileiros, influenciando o custo do crédito e dos empréstimos.
+
 """
 
 
     modelo = genai.GenerativeModel(model_name='gemini-1.5-pro-latest', generation_config=generation_config)
 
-    resp = modelo.generate_content("Seguindo o modelo a seguir:\n" + exemplo_resumo + 
-                                   "\n\n Informe o tema principal, os tópicos, e faça um resumo no idioma: " + idioma + ", com uma formalidade " + formalidade + "do texto a seguir: \n" + texto)
+    resp = modelo.generate_content("Seguindo os exemplos a seguir: \n\n" + exemplo_resumo + 
+                                   "\n\n\nInforme o tema principal, os tópicos, e com uma formalidade " + formalidade + ", faça um resumo no idioma: " + idioma + ", do seguinte texto: \n\n" + texto)
     return resp.text
