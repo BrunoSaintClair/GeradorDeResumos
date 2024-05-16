@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
-from functions.functions import geraResposta
+from functions.functions import gerarResposta
 from markdown import markdown
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -13,7 +14,7 @@ def gerar_resumo():
     formalidade = request.form.get('formalidade')
     texto = request.form.get('texto')
 
-    resposta = geraResposta(formalidade=formalidade, idioma=idioma, texto=texto)
+    resposta = gerarResposta(formalidade=formalidade, idioma=idioma, texto=texto)
     resposta = markdown(resposta)
 
     return render_template('index.html', resumo = resposta)

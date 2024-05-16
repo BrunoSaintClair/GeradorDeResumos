@@ -1,4 +1,4 @@
-def defineTemperatura(formalidade):
+def definirTemperatura(formalidade):
     dicionario = {
         'Alta' : 1,
         'Média' : 0.5,
@@ -8,7 +8,7 @@ def defineTemperatura(formalidade):
     return dicionario[formalidade]
 
 
-def geraResposta(idioma, formalidade, texto):
+def gerarResposta(idioma, formalidade, texto):
     import google.generativeai as genai
 
     chave_api = ''
@@ -18,7 +18,7 @@ def geraResposta(idioma, formalidade, texto):
 
     generation_config = {
     'candidate_count' : 1,
-    'temperature' : defineTemperatura(formalidade)
+    'temperature' : definirTemperatura(formalidade)
     }
 
     exemplo_resumo = """
@@ -106,6 +106,6 @@ Resumo: A ata da última reunião do Copom, divulgada pelo Banco Central, revelo
 
     modelo = genai.GenerativeModel(model_name='gemini-1.5-pro-latest', generation_config=generation_config)
 
-    resp = modelo.generate_content("Seguindo os exemplos a seguir: \n\n" + exemplo_resumo + 
+    resposta = modelo.generate_content("Seguindo os exemplos a seguir: \n\n" + exemplo_resumo + 
                                    "\n\n\nInforme o tema principal, os tópicos, e com uma formalidade " + formalidade + ", faça um resumo no idioma: " + idioma + ", do seguinte texto: \n\n" + texto)
-    return resp.text
+    return resposta.text
