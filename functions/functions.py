@@ -7,13 +7,14 @@ def definirTemperatura(formalidade):
 
     return dicionario[formalidade]
 
-
 def gerarResposta(idioma, formalidade, texto):
     import google.generativeai as genai
+    from dotenv import load_dotenv
+    import os
 
-    chave_api = ''
+    load_dotenv()
 
-    GOOGLE_API_KEY=chave_api
+    GOOGLE_API_KEY=os.getenv('CHAVE_API')
     genai.configure(api_key=GOOGLE_API_KEY)
 
     generation_config = {
