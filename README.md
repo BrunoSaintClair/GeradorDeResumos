@@ -1,6 +1,6 @@
 # Gerador de resumos
 
-Criado na linguagem Python utilizando o framework para desenvolvimento web [Flask](https://flask.palletsprojects.com/en/3.0.x/) e a [Api da Google Gemini](https://ai.google.dev/gemini-api?hl=pt-br).
+Criado na linguagem Python utilizando o framework para desenvolvimento web [Flask](https://flask.palletsprojects.com/en/3.0.x/), a [Api da Google Gemini](https://ai.google.dev/gemini-api?hl=pt-br) e a biblioteca [Bootstrap](https://getbootstrap.com/).
 
 ## Como funciona
 
