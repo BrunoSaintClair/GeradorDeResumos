@@ -11,3 +11,9 @@ Utiliza a IA generativa Gemini pra dividir um texto num formato específico (que
 * Resumo 
 
 Possuindo a possibilidade de gerar o resultado em vários idiomas, além de escolher o grau de formalidade da resposta (que ao ser escolhido, altera o parâmetro de "temperatura" da IA, influenciando assim na escolha das palavras).
+
+## Exemplos de uso
+* Traduções de texto
+* Dividir em tópicos textos muito grandes
+* Resumir textos com menor formalidade para facilitar o entendimento
+
